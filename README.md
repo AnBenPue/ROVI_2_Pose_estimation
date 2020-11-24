@@ -90,4 +90,4 @@ After updating the code, we have to rebuild the catkin workspace.
 
 Video of the whole ROVI II project performing the pose estimation plus the forced based insertion:
 
-[![RoVi2 project SDU - Pose estimation and Force-based insertion](http://img.youtube.com/vi/yFpsWwgW0GU/0.jpg)](http://www.youtube.com/watch?v=yFpsWwgW0GU "RoVi2 project SDU - Pose estimation and Force-based insertion"
+[![RoVi2 project SDU - Pose estimation and Force-based insertion](http://img.youtube.com/vi/yFpsWwgW0GU/0.jpg)](http://www.youtube.com/watch?v=yFpsWwgW0GU "RoVi2 project SDU - Pose estimation and Force-based insertion")
