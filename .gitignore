@@ -1,0 +1,7 @@
+# List of files and directories to be ignored by git
+.catkin_workspace
+.vscode/
+build/
+devel/
+logs/
+Pointcould_samples/
