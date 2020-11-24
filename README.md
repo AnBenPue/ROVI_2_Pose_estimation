@@ -77,7 +77,7 @@ $ rosrun vision pose_estimation -c
 We can test the load functionality with:
 
 ```sh
-$ rosrun vision pose_estimation -l images/scene_sample.pcd
+$ rosrun vision pose_estimation -l utilities/scene_sample.pcd
 ```
 
 In case we want to estimate the pose of a different object, we need to go to **/src/vision/src*pose_estimation.cpp line 85** and change the object path with the path to the point cloud (**.pcd**) with the new object of interest.
@@ -87,3 +87,8 @@ In case we want to estimate the pose of a different object, we need to go to **/
 ```
 
 After updating the code, we have to rebuild the catkin workspace.
+
+Video of the whole ROVI II project performing the pose estimation plus the forced based insertion:
+
+## SDU Robot system design project - Lego packing
+[![RoVi2 project SDU - Pose estimation and Force-based insertion](http://img.youtube.com/vi/L4v8Vo0YYEs/0.jpg)](https://www.youtube.com/watch?v=yFpsWwgW0GU "RoVi2 project SDU - Pose estimation and Force-based insertion")
