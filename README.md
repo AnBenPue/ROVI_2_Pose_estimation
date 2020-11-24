@@ -1,5 +1,5 @@
 # ROVI 2: Pose estimation
-This project is part of the semester project for the course of Robotics & Vision II of the Master in Advanced robotics at SDU ([Project report](https://drive.google.com/file/d/15sxckOLWULKDiB0q91TWExsH8m44Zkem/view?usp=sharing))([Video](https://www.youtube.com/watch?v=yFpsWwgW0GU)). It covers the pose estimation section in which the goal is to detect the object of interest in a scene point cloud in order for the UR arm to pick it.. The scene point cloud is provided by a **Intel Realsense D435** stereo-camera. 
+This project is part of the semester project for the course of Robotics & Vision II of the Master in Advanced robotics at SDU ([Project report](https://drive.google.com/file/d/15sxckOLWULKDiB0q91TWExsH8m44Zkem/view?usp=sharing))([Video](https://www.youtube.com/watch?v=yFpsWwgW0GU)). It covers the pose estimation section in which the goal is to detect the object of interest in a scene point cloud in order for the UR arm to pick it. The scene point cloud is provided by a **Intel Realsense D435** stereo-camera. 
 
 <h3 align="center">Object to be found in the scene</h3>
 <p align="center">
@@ -17,7 +17,7 @@ The pose estimation proces has multiple stages, (As shown in the picture below).
 
 
 # Installation
-
+This project has been tested in Ubuntu 20.04.1 LTS and ROS Neotic. 
 ## Robwork installation
 Since this program was integrated in a bigger project, there are some dependencies to the RobWork library. Mostly regarding operations with Transformation matrices. 
 * [Robwork installation](https://www.robwork.dk/installation/)
@@ -43,7 +43,7 @@ $ sudo apt-get install ros-noetic-rgbd-launch
 * Build catkin workspace in the repository folder:
 ```sh
 $ cd /path/to/repository/folder
-$ catkin build 
+$ catkin_make 
 ```
 
 # Usage
@@ -79,3 +79,11 @@ We can test the load functionality with:
 ```sh
 $ rosrun vision pose_estimation -l images/scene_sample.pcd
 ```
+
+In case we want to estimate the pose of a different object, we need to go to **/src/vision/src*pose_estimation.cpp line 85** and change the object path with the path to the point cloud (**.pcd**) with the new object of interest.
+
+```c++
+85 utilities.load_object_of_interest(object, "./utilities/object.pcd");
+```
+
+After updating the code, we have to rebuild the catkin workspace.

@@ -82,7 +82,7 @@ int main(int argc, char **argv)
     else if ((arg == "-c") || (arg == "--camera"))
     {
       enable_camera = true;
-      utilities.load_object_of_interest(object, "./Utilities/Piece.pcd");
+      utilities.load_object_of_interest(object, "./utilities/object.pcd");
       cout << "|--> ROS node and Camera Point Cloud enabled" << endl;
     }
   }
@@ -134,7 +134,7 @@ int main(int argc, char **argv)
       // Removing the extension:
       size_t lastindex = load_filename.find_last_of(".");
       load_filename = load_filename.substr(0, lastindex);
-      utilities.load_object_of_interest(object, "./Utilities/Piece.pcd");
+      utilities.load_object_of_interest(object, "./utilities/object.pcd");
     }
     else
     {
