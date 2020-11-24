@@ -88,6 +88,7 @@ In case we want to estimate the pose of a different object, we need to go to **/
 
 After updating the code, we have to rebuild the catkin workspace.
 
+## Result
 Video of the whole ROVI II project performing the pose estimation plus the forced based insertion:
 
 [![RoVi2 project SDU - Pose estimation and Force-based insertion](http://img.youtube.com/vi/yFpsWwgW0GU/0.jpg)](http://www.youtube.com/watch?v=yFpsWwgW0GU "RoVi2 project SDU - Pose estimation and Force-based insertion")
