@@ -178,10 +178,10 @@ int main(int argc, char **argv)
 
   // Global alignment
   Eigen::Matrix4f T = Eigen::Matrix4f::Identity();
-  localizer.global_alignment(scene, object, T, 1000, true);
+  localizer.global_alignment(scene, object, T, 800, true);
 
   // Local alignemnt
-  localizer.local_alignment(scene, object, T, 500, true);
+  localizer.local_alignment(scene, object, T, 100, true);
 
   // Show results
   utilities.display_result_RGB(object_final, scene_XYZRGBA, T);

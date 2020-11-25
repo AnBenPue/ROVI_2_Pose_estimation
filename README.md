@@ -49,7 +49,7 @@ $ catkin_make
 # Usage
 In order to run the pose estimation process, first we have to source the catkin workspace:
 ```bash
-source devel/setup.bash 
+$ source devel/setup.bash 
 ```
 The program offers two main options, we can get the point cloud from the camera via ROS or we can load a point cloud (**.pcd**) saved in disk.
 ```bash
@@ -89,6 +89,9 @@ In case we want to estimate the pose of a different object, we need to go to **/
 After updating the code, we have to rebuild the catkin workspace.
 
 ## Result
+The whole process should go as follows:
+![](images/result.gif)
+
 Video of the whole ROVI II project performing the pose estimation plus the forced based insertion:
 
 [![RoVi2 project SDU - Pose estimation and Force-based insertion](http://img.youtube.com/vi/yFpsWwgW0GU/0.jpg)](http://www.youtube.com/watch?v=yFpsWwgW0GU "RoVi2 project SDU - Pose estimation and Force-based insertion")
